@@ -20,6 +20,7 @@ export default class ClosetDeliveryAssignComponent extends Component {
       this.setState({
         closetId: "CLO-ZYX-0001"
       });
+      this.props.closedAssigned(true);
       alert("Closet Assigned Successfully");
     }
   };

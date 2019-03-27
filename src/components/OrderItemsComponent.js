@@ -12,7 +12,7 @@ export default class OrderItemsComponent extends Component {
     const renderItem = this.props.orderItems.map(orderItem => {
       return (
         <div key={orderItem.id}>
-          <OrderItemComponent orderItem={orderItem} />
+          <OrderItemComponent orderItem={orderItem} isClosetAssigned={this.props.isClosetAssigned}/>
         </div>
       );
     });

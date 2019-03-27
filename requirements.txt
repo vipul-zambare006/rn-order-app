@@ -1,0 +1,17 @@
+a. This is a page that shows the details of a weekly order.
+b. Each order can have between 5 to 7 items, is tied to a City of delivery, primary key is Order ID.
+c. The QR code is just the QR code representation of the Order ID.
+d. Each item can be something new that we do not currently own, and thus need to purchase/ fulfil (status will be pending), or something from our existing collection (status will be fulfilled)
+e. For those items within our existing collection, there will be a call number that our warehouse staff to reference to.
+
+f. Clicking on items that are pending should open a new window to another page, Fulfil Order (for now just simulate a simple page to allow user to set the  item to fulfil)
+
+g. When all items are fulfilled, the page will then allow the user to assign a Closet
+
+h. Only when a Closet is assigned, will the page allow the item to be set to “Packed”
+
+i. Only when all items are packed, can then the user be allowed to assign a delivery man
+
+j. Each Order is tied to a Member
+
+k. Each Member has a Delivery Address (Unit No, Blk No, Street, Town, Postal Code, as well as Residence Type – HDB, Condo, Apt, House, etc), a Subscription Plan that states the Size (XS, S, M, L, XL) and Range (Premium, 	High End, Luxurious) of the Clothings the member has signed up for.

@@ -4,10 +4,15 @@ import item1 from "../assets/1.jpg";
 export default class OrderItemComponent extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      checked: false
+    };
   }
 
   onStatusChange = () => {
-    console.log("checked");
+    this.setState({
+      checked: !this.state.checked
+    });
   };
 
   render() {
@@ -50,8 +55,10 @@ export default class OrderItemComponent extends Component {
         <div>
           <input
             type="checkbox"
+            checked={this.state.checked}
             onChange={this.onStatusChange}
-            checked={orderItem.isPacked}
+            disabled={!this.props.isClosetAssigned}
+            // checked={orderItem.isPacked}
           />
           Packed
         </div>
