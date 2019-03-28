@@ -27,27 +27,16 @@ export default class MemberDetailsComponent extends Component {
       });
   }
 
-  onChangeOrderStatus = (e) =>{
-    console.log(e.target.value)
-  }
-
   render() {
     return (
       <div>
-        <div style={{ paddingBottom: "30px" }}>
+        <div style={{ padding: "30px", marginLeft: "50%" }}>
           <div>
             <span className="bold-text">
-              {this.state.address.town}-{this.state.address.city}-
-              {this.state.member.range}-{this.state.member.size}
+              <span className="blue-text">{this.state.address.town}- </span>
+              <span className="orange-text">{this.state.address.city}- {this.state.member.range}-{this.state.member.size}</span>
             </span>
           </div>
-          <span className="bold-text">Status: </span>
-          <select onChange={this.onChangeOrderStatus}>
-            <option value="preparing">Preparing</option>
-            <option value="closetAssigned">Closet Assigned</option>
-            <option value="packed">Packed</option>
-            <option value="delivered">Delivered</option>
-          </select>
         </div>
         <div>
           <span className="bold-text">BLK No: </span>

@@ -45,7 +45,7 @@
     "address": {
       "unitNo": 111,
       "blkNo": 98,
-      "street": "reeer rerer",
+      "street": "Robinson road",
       "town": "Clementi",
       "postalCode": "0833233",
       "residanceType": "Condo",
@@ -83,24 +83,8 @@
       "id": 2,
       "orderId": "O2333",
       "productId": 2,
-      "status": "Pending",
-      "refWarehouseStaffNumber": "",
-      "isPacked": false
-    },
-    {
-      "id": 3,
-      "orderId": "O2333",
-      "productId": 3,
       "status": "Fulfilled",
-      "refWarehouseStaffNumber": "56737876",
-      "isPacked": false
-    },
-    {
-      "id": 4,
-      "orderId": "O2333",
-      "productId": 4,
-      "status": "Pending",
-      "refWarehouseStaffNumber": "",
+      "refWarehouseStaffNumber": "324342342",
       "isPacked": false
     }
   ]

@@ -7,12 +7,16 @@ export default class OrderItemsComponent extends Component {
     super(props);
   }
 
+  handleIsPacked = () =>{
+    this.props.handleIsPacked();
+  }
+
   render() {
     console.log('in OIts:',this.props)
     const renderItem = this.props.orderItems.map(orderItem => {
       return (
         <div key={orderItem.id}>
-          <OrderItemComponent orderItem={orderItem} isClosetAssigned={this.props.isClosetAssigned}/>
+          <OrderItemComponent orderItem={orderItem} handleIsPacked={this.handleIsPacked} isClosetAssigned={this.props.isClosetAssigned}/>
         </div>
       );
     });

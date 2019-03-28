@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import item1 from "../assets/1.jpg";
+const api = require("../config/api");
+
 export default class OrderItemComponent extends Component {
   constructor(props) {
     super(props);
@@ -9,9 +10,22 @@ export default class OrderItemComponent extends Component {
     };
   }
 
-  onStatusChange = () => {
+  onStatusChange = (id) => {
     this.setState({
       checked: !this.state.checked
+    });
+    console.log('packedItem', id)
+    api
+    .patch(api.Uri.OrderItems+'/'+id, {isPacked: true} )
+    .then(response => response.json())
+    .then(response => {
+      if (response) {
+       console.log('item packed success'); 
+       this.props.handleIsPacked();
+      }
+    })
+    .catch(err => {
+      console.log(err);
     });
   };
 
@@ -48,15 +62,15 @@ export default class OrderItemComponent extends Component {
           {orderItem.status}
         </div>
         <div className="fulfilled-order">
-          {orderItem.refWarehouseStaffNumber
-            ? orderItem.refWarehouseStaffNumber
+          { orderItem.status === "Fulfilled"
+            ? `Call: ${orderItem.refWarehouseStaffNumber}`
             : ""}
         </div>
         <div>
           <input
             type="checkbox"
             checked={this.state.checked}
-            onChange={this.onStatusChange}
+            onChange={this.onStatusChange.bind(this,orderItem.id)}
             disabled={!this.props.isClosetAssigned}
             // checked={orderItem.isPacked}
           />

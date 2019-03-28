@@ -32,7 +32,7 @@ export default class ClosetDeliveryAssignComponent extends Component {
           <span className="bold-text">Assigned Closet ID:</span>
           <div className="input-group sm-3 mb-3">
             <input
-              readOnly="true"
+              readOnly={true}
               className="form-input"
               type="text"
               value={this.state.closetId}
@@ -50,7 +50,7 @@ export default class ClosetDeliveryAssignComponent extends Component {
         <div>
           <span className="bold-text">Assigned Delivery Man:</span>
           <span>
-            <select>
+            <select disabled={!this.props.isAllItemsPacked}>
               <option>---select---</option>
               <option>Mr. John Doe</option>
             </select>

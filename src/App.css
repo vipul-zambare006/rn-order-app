@@ -15,3 +15,19 @@
 .fulfilled-order {
   color: #7bb71f;
 }
+
+.blue-text{
+  color: blue;
+}
+
+.orange-text{
+  color: orange;
+}
+
+body{
+  background-color: #D0D0D0;
+  padding:0px;
+  margin:0px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
