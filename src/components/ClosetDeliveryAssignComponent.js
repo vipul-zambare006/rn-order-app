@@ -3,7 +3,6 @@ const api = require("../config/api");
 export default class ClosetDeliveryAssignComponent extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       closetId: ""
     };

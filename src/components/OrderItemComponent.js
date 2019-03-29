@@ -14,13 +14,11 @@ export default class OrderItemComponent extends Component {
     this.setState({
       checked: !this.state.checked
     });
-    console.log('packedItem', id)
     api
     .patch(api.Uri.OrderItems+'/'+id, {isPacked: true} )
     .then(response => response.json())
     .then(response => {
       if (response) {
-       console.log('item packed success'); 
        this.props.handleIsPacked();
       }
     })
@@ -72,7 +70,6 @@ export default class OrderItemComponent extends Component {
             checked={this.state.checked}
             onChange={this.onStatusChange.bind(this,orderItem.id)}
             disabled={!this.props.isClosetAssigned}
-            // checked={orderItem.isPacked}
           />
           Packed
         </div>

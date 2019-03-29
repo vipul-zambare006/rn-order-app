@@ -16,18 +16,23 @@
   color: #7bb71f;
 }
 
-.blue-text{
+.blue-text {
   color: blue;
 }
 
-.orange-text{
+.orange-text {
   color: orange;
 }
 
-body{
-  background-color: #D0D0D0;
-  padding:0px;
-  margin:0px;
+body {
+  background-color: #d0d0d0;
+  padding: 0px;
+  margin: 0px;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.qrcode {
+  float: right;
+  margin: 50px;
 }

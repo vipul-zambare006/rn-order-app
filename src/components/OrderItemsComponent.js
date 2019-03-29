@@ -3,7 +3,6 @@ import OrderItemComponent from "./OrderItemComponent";
 
 export default class OrderItemsComponent extends Component {
   constructor(props) {
-    debugger;
     super(props);
   }
 
@@ -12,7 +11,6 @@ export default class OrderItemsComponent extends Component {
   }
 
   render() {
-    console.log('in OIts:',this.props)
     const renderItem = this.props.orderItems.map(orderItem => {
       return (
         <div key={orderItem.id}>

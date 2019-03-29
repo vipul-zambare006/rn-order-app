@@ -3,12 +3,11 @@ import MemberDetailsComponent from "./MemberDetailsComponent";
 import QRCodeComponent from "./QRCodeComponent";
 import ClosetDeliveryAssignComponent from "./ClosetDeliveryAssignComponent";
 import OrderItemsComponent from "./OrderItemsComponent";
-import OrderStatusComponent from "./OrderStatusComponent"
+import OrderStatusComponent from "./OrderStatusComponent";
 const api = require("../config/api");
 
 export default class WeeklyOrderComponent extends Component {
   constructor(props) {
-    debugger;
     super(props);
     this.state = {
       order: {},
@@ -52,22 +51,18 @@ export default class WeeklyOrderComponent extends Component {
 
   handleIsPacked = () => {
     this.getOrder();
-
-    console.log('handle is packed',this.state.orderItems.map(x => (x.isPacked === true)).includes(false))
-
-    if(!this.state.orderItems.map(x => (x.isPacked === true)).includes(false))
-    {
+    if (!this.state.orderItems.map(x => x.isPacked === true).includes(false)) {
       this.setState({
         isAllItemsPacked: true
-      })
+      });
     }
-  }
+  };
 
   render() {
     return (
       <div>
         <div className="row  mx-lg-n5">
-        <div className="col-md-12 offset-4">
+          <div className="col-md-12 offset-4">
             <OrderStatusComponent />
           </div>
           <div className="col-md-8">
@@ -79,7 +74,11 @@ export default class WeeklyOrderComponent extends Component {
         </div>
         <div className="row mx-lg-n5" style={{ marginTop: "30px" }}>
           <div className="col-md-8">
-            <ClosetDeliveryAssignComponent orderItems={this.state.orderItems} isAllItemsPacked={this.state.isAllItemsPacked} closedAssigned={this.handleClosetAssigned} />
+            <ClosetDeliveryAssignComponent
+              orderItems={this.state.orderItems}
+              isAllItemsPacked={this.state.isAllItemsPacked}
+              closedAssigned={this.handleClosetAssigned}
+            />
           </div>
         </div>
         <div className="row mx-lg-n5">

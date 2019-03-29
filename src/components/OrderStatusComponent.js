@@ -6,6 +6,7 @@ export default class OrderStatusComponent extends Component {
     }
     
   onChangeOrderStatus = (e) =>{
+    //TODO: Validate orderItems when user changes status
     console.log(e.target.value)
   }
 
