@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import logo from "./logo.svg";
 import "./App.css";
 import WeeklyOrderComponent from "./components/WeeklyOrderComponent";
 import FulfillItemComponent from "./components/FulfillItemComponent";
-import OrderItemsComponent from "./components/OrderItemsComponent";
 
 class App extends Component {
   render() {

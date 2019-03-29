@@ -55,7 +55,7 @@ export default class WeeklyOrderComponent extends Component {
 
     console.log('handle is packed',this.state.orderItems.map(x => (x.isPacked === true)).includes(false))
 
-    if(this.state.orderItems.map(x => (x.isPacked === true)).includes(false))
+    if(!this.state.orderItems.map(x => (x.isPacked === true)).includes(false))
     {
       this.setState({
         isAllItemsPacked: true

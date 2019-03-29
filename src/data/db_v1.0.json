@@ -45,7 +45,7 @@
     "address": {
       "unitNo": 111,
       "blkNo": 98,
-      "street": "Robinson Road",
+      "street": "Robinson road",
       "town": "Clementi",
       "postalCode": "0833233",
       "residanceType": "Condo",
@@ -83,8 +83,8 @@
       "id": 2,
       "orderId": "O2333",
       "productId": 2,
-      "status": "Pending",
-      "refWarehouseStaffNumber": "",
+      "status": "Fulfilled",
+      "refWarehouseStaffNumber": "324342342",
       "isPacked": false
     },
     {
@@ -100,8 +100,24 @@
       "orderId": "O2333",
       "productId": 4,
       "status": "Pending",
-      "refWarehouseStaffNumber": "",
+      "refWarehouseStaffNumber": "324342342",
+      "isPacked": false
+    },
+    {
+      "id": 5,
+      "orderId": "O2333",
+      "productId": 4,
+      "status": "Pending",
+      "refWarehouseStaffNumber": "97855533",
+      "isPacked": false
+    },
+    {
+      "id": 6,
+      "orderId": "O2333",
+      "productId": 4,
+      "status": "Pending",
+      "refWarehouseStaffNumber": "97722221",
       "isPacked": false
     }
   ]
-}
+} 
