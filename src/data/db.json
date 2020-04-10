@@ -77,7 +77,7 @@
       "productId": 1,
       "status": "Fulfilled",
       "refWarehouseStaffNumber": "87621111",
-      "isPacked": false
+      "isPacked": true
     },
     {
       "id": 2,
@@ -85,7 +85,7 @@
       "productId": 2,
       "status": "Fulfilled",
       "refWarehouseStaffNumber": "324342342",
-      "isPacked": false
+      "isPacked": true
     },
     {
       "id": 3,
@@ -93,31 +93,31 @@
       "productId": 3,
       "status": "Fulfilled",
       "refWarehouseStaffNumber": "56737876",
-      "isPacked": false
+      "isPacked": true
     },
     {
       "id": 4,
       "orderId": "O2333",
       "productId": 4,
-      "status": "Pending",
+      "status": "Fulfilled",
       "refWarehouseStaffNumber": "324342342",
-      "isPacked": false
+      "isPacked": true
     },
     {
       "id": 5,
       "orderId": "O2333",
       "productId": 4,
-      "status": "Pending",
+      "status": "Fulfilled",
       "refWarehouseStaffNumber": "97855533",
-      "isPacked": false
+      "isPacked": true
     },
     {
       "id": 6,
       "orderId": "O2333",
       "productId": 4,
-      "status": "Pending",
+      "status": "Fulfilled",
       "refWarehouseStaffNumber": "97722221",
-      "isPacked": false
+      "isPacked": true
     }
   ]
 }
